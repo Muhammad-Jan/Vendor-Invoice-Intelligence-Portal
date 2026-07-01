@@ -156,3 +156,40 @@ A **Streamlit** application demonstrates the complete machine learning pipeline 
 - Display human-readable prediction explanations
 
 The application integrates data preprocessing, trained machine learning models, and an interactive user interface into a single end-to-end solution.
+
+## 📁 Project Structure
+
+```text
+Vendor-Invoice-Intelligence-Portal/
+│
+├── app.py                           # Streamlit application
+├── README.md                        # Project documentation
+├── requirements.txt                 # Project dependencies
+│
+├── freight_cost_prediction/         # Freight cost prediction pipeline
+│   ├── train.py                     # Model training
+│   ├── data_preprocessing.py        # Data preprocessing
+│   ├── model_evaluation.py          # Model evaluation
+│   └── models/
+│       └── predict_freight_model.pkl
+│
+├── invoice_flagging/                # Invoice flagging pipeline
+│   ├── train.py                     # Model training
+│   ├── data_preprocessing.py        # Data preprocessing
+│   ├── modeling_evaluation.py       # Model evaluation
+│   └── models/
+│       ├── predict_invoice_model.pkl
+│       └── scaler.pkl
+│
+├── inference/                       # Prediction scripts
+│   ├── predict_freight.py
+│   └── predict_invoice_flag.py
+│
+├── notebooks/                       # Jupyter notebooks
+│   ├── Predicting Freight Cost.ipynb
+│   └── Invoice Flagging.ipynb
+│
+└── images/                          # Images used in README
+    ├── Freight Cost Prediction.png
+    └── Vendor Invoice Approval Flag.png
+```
