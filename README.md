@@ -92,3 +92,27 @@ The EDA phase is designed to answer important business questions such as:
 - Is freight cost primarily dependent on quantity?
 
 Statistical hypothesis testing (**Independent t-tests**) is used to validate whether flagged invoices are significantly different from normal invoices.
+
+## 🤖 Models Used
+
+### 📈 Regression (Freight Cost Prediction)
+
+The following regression models were trained and evaluated:
+
+- **Linear Regression** *(Baseline Model)*
+- **Decision Tree Regressor**
+- **Random Forest Regressor** *(Final Selected Model)*
+
+The **Random Forest Regressor** achieved the best performance and was selected as the final model for freight cost prediction.
+
+---
+
+### 🚩 Classification (Invoice Flagging)
+
+The following classification models were trained and evaluated:
+
+- **Logistic Regression** *(Baseline Model)*
+- **Decision Tree Classifier**
+- **Random Forest Classifier** *(Final Selected Model)*
+
+Hyperparameter tuning was performed using **GridSearchCV**, with the **F1-score** as the optimization metric to effectively handle class imbalance. The tuned **Random Forest Classifier** delivered the best overall performance and was selected as the final classification model.
