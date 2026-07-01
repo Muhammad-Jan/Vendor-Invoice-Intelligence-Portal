@@ -227,3 +227,13 @@ python inference/predict_invoice_flag.py
 ```bash
 streamlit run app.py
 ```
+## 👨‍💻 Author & Contact
+
+**Muhammad**  
+**Data Analyst**
+
+📧 **Email:**  
+[muhammad.tech.09@gmail.com](mailto:muhammad.tech.09@gmail.com)
+
+🔗 **LinkedIn:**  
+[linkedin.com/in/muhammad-jan-a98134341](https://www.linkedin.com/in/muhammad-jan-a98134341/)
