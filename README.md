@@ -66,3 +66,29 @@ Predict whether a vendor invoice should be approved automatically or flagged for
 <p align="center">
   <img src="images/Vendor%20Invoice%20Approval%20Flag.png" alt="Vendor Invoice Approval Flagging" width="900">
 </p>
+
+## 📂 Data Sources
+
+All project data is stored in a relational **SQLite** database (`inventory.db`). The database consists of the following tables:
+
+| Table | Purpose |
+|--------|----------|
+| `vendor_invoice` | Stores invoice-level financial and timing information. |
+| `purchases` | Contains item-level purchase records. |
+| `purchase_prices` | Stores reference purchase prices. |
+| `begin_inventory` | Beginning inventory snapshot. |
+| `end_inventory` | Ending inventory snapshot. |
+
+To build the machine learning dataset, invoice-level features are generated using **SQL aggregations** across these tables.
+
+---
+
+## 📊 Exploratory Data Analysis (EDA)
+
+The EDA phase is designed to answer important business questions such as:
+
+- Are flagged invoices associated with higher financial exposure?
+- Does freight cost increase linearly with purchase quantity?
+- Is freight cost primarily dependent on quantity?
+
+Statistical hypothesis testing (**Independent t-tests**) is used to validate whether flagged invoices are significantly different from normal invoices.
