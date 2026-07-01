@@ -116,3 +116,43 @@ The following classification models were trained and evaluated:
 - **Random Forest Classifier** *(Final Selected Model)*
 
 Hyperparameter tuning was performed using **GridSearchCV**, with the **F1-score** as the optimization metric to effectively handle class imbalance. The tuned **Random Forest Classifier** delivered the best overall performance and was selected as the final classification model.
+
+## 📈 Evaluation Metrics
+
+### Freight Cost Prediction
+
+The regression models were evaluated using the following performance metrics:
+
+- **Mean Absolute Error (MAE)**
+- **Root Mean Squared Error (RMSE)**
+- **R² Score**
+
+These metrics measure prediction accuracy and quantify the difference between actual and predicted freight costs.
+
+---
+
+### 🚩 Invoice Flagging
+
+The classification models were evaluated using:
+
+- **Accuracy**
+- **Precision**
+- **Recall**
+- **F1-Score**
+- **Classification Report**
+- **Feature Importance Analysis**
+
+These metrics provide a comprehensive evaluation of the model's classification performance and help identify the most influential features used for invoice flagging.
+
+---
+
+## 🔗 End-to-End Application
+
+A **Streamlit** application demonstrates the complete machine learning pipeline by allowing users to:
+
+- Enter invoice details
+- Predict the expected freight cost
+- Flag suspicious invoices in real time
+- Display human-readable prediction explanations
+
+The application integrates data preprocessing, trained machine learning models, and an interactive user interface into a single end-to-end solution.
