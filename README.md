@@ -193,3 +193,37 @@ Vendor-Invoice-Intelligence-Portal/
     ├── Freight Cost Prediction.png
     └── Vendor Invoice Approval Flag.png
 ```
+## 🚀 How to Run This Project
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Muhammad-Jan/Vendor-Invoice-Intelligence-Portal.git
+cd Vendor-Invoice-Intelligence-Portal
+```
+
+### 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Train and Save the Models
+
+```bash
+python freight_cost_prediction/train.py
+python invoice_flagging/train.py
+```
+
+### 4. Test the Models
+
+```bash
+python inference/predict_freight.py
+python inference/predict_invoice_flag.py
+```
+
+### 5. Launch the Streamlit Application
+
+```bash
+streamlit run app.py
+```
